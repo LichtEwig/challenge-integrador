@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <nav>
-            <picture>
+        <nav class="navbar">
+            <picture class="navbar_logo">
                 <a href="./index.html">
                     <img src="./multimedia/branding/logo_light_horizontal.svg" alt="isologotipo de la marca funkshop">
                 </a>
@@ -19,18 +19,31 @@
                   <img src="" alt="">
             </a>
             <img src="" alt="">
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">shop</a>
+            <ul class="navbar_menu">
+                <li class="navbar_item with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">shop <iconify-icon icon="mdi:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                              <a href="" class="submenu__link">funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">llaveros</a>
+
+                        </li>
+
+                    </ul>
                 </li>
                 <li>
-                    <a href="./contacto.html">contacto</a>
+                    <a class="navbar__link" href="./contacto.html">contacto</a>
                 </li>
                 <li>
-                    <a href="./pages/login.html">login</a>
+                    <a class="navbar__link" href="./pages/login.html">login</a>
                 </li>
-                <li>
-                    <a href="./carrito.html">carrito</a>
+                <li class="navbar_item">
+                    <a class="navbar__cart" href="./carrito.html">carrito</a>
                     <img src="./multimedia/icons/cart-icon.svg" alt="icono de carrito">
                 </li>
             </ul>
@@ -158,5 +171,6 @@
             <p>all right reserved 2023 - funkoshop &copy;</p>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>
